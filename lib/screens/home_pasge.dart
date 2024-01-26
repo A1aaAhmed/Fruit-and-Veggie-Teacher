@@ -14,46 +14,73 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(widget.title),
+        title: Text(widget.title, textAlign: TextAlign.center),
       ),
-      body: Expanded(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Container(
-              padding: const EdgeInsets.all(10),
-              child: const Image(
-                image: AssetImage('assets/Guess_who.jpg'),
+      body: Center(
+        child: SingleChildScrollView(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Container(
+                padding: const EdgeInsets.all(5),
+                height: 400,
+                child: const Image(
+                  image: AssetImage('assets/Guess_who.jpg'),
+                ),
               ),
-            ),
-            TextButton(
-                onPressed: () {},
-                child: Container(
-                  padding: const EdgeInsetsDirectional.symmetric(
-                      horizontal: 100, vertical: 20),
-                  child: Row(
-                    children: const [
-                      Text("Upload Picture"),
-                      Icon(Icons.image, color: Colors.white)
-                    ],
-                  ),
-                )),
-            TextButton(
-                onPressed: () {},
-                child: Container(
-                  padding: const EdgeInsetsDirectional.symmetric(
-                      horizontal: 100, vertical: 20),
-                  child: Row(
-                    children: const [
-                      Text("Upload Picture"),
-                      Icon(
-                        Icons.camera_alt_outlined,
-                        color: Colors.white,
-                      )
-                    ],
-                  ),
-                ))
-          ],
+              const SizedBox(height: 40),
+              TextButton(
+                  onPressed: () {},
+                  child: Container(
+                    height: 60,
+                    width: 200,
+                    color: Colors.red,
+                    padding:
+                        const EdgeInsetsDirectional.symmetric(horizontal: 20),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: const [
+                        Icon(Icons.image, color: Colors.white),
+                        SizedBox(
+                          width: 10,
+                        ),
+                        Text(
+                          "Upload Picture",
+                          style: TextStyle(color: Colors.white),
+                        ),
+                      ],
+                    ),
+                  )),
+              const SizedBox(
+                height: 20,
+              ),
+              TextButton(
+                  onPressed: () {},
+                  child: Container(
+                    width: 200,
+                    height: 60,
+                    color: Colors.red,
+                    padding:
+                        const EdgeInsetsDirectional.symmetric(horizontal: 20),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: const [
+                        Icon(
+                          Icons.camera_alt_outlined,
+                          color: Colors.white,
+                        ),
+                        SizedBox(
+                          width: 10,
+                        ),
+                        Text(
+                          "Upload Picture",
+                          style: TextStyle(color: Colors.white),
+                        ),
+                      ],
+                    ),
+                  ))
+            ],
+          ),
         ),
       ),
     );
