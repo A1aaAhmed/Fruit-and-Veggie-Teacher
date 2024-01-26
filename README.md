@@ -1,16 +1,6 @@
 # fruit_and_veggie_teacher
 
-A new Flutter project.
+An educational app has been developed to help children learn about various fruits and vegetables. The app has been built using Flutter and ML using TensorFlow. The app allows users to upload or take a picture of a fruit or vegetable, and then the app uses machine learning to identify and label it. This innovative technology can make learning fun and engaging for children, while also helping them to develop their knowledge and understanding of different fruits and vegetables.
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Technologies used:
+  1-Flutter
