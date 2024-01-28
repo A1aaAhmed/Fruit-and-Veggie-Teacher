@@ -4,5 +4,5 @@ An educational app has been developed to help children learn about various fruit
 
 ## Using:
     1- Flutter
-    2-  image_picker package
+    2- image_picker package
     3- tflite_flutter: ^0.10.4
