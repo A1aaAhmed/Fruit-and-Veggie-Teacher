@@ -40,11 +40,7 @@ class Results extends StatelessWidget {
                           File(image!.path),
                           fit: BoxFit.cover,
                         )
-                      : const Center(child: Text("Please try again!"))
-                  // const Image(
-                  //   image: AssetImage('assets/Guess_who.jpg'),
-                  // ),
-                  ),
+                      : const Center(child: Text("Please try again!"))),
               const SizedBox(height: 20),
               TextButton(
                   onPressed: () {
